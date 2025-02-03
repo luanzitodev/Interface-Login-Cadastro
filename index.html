@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Entrar</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container"> 
+        <!-- Formulário de Login -->
+        <div id="loginForm">
+            <form action="#"> 
+                <h2>Entrar</h2> 
+                <div class="input-field"> 
+                    <input type="text" required>
+                    <label>Insira seu email</label> 
+                </div>
+                <div class="input-field"> 
+                    <input type="password" required>
+                    <label>Insira sua senha</label>
+                </div>
+                <div class="forget">
+                    <label for="remember"> 
+                        <input type="checkbox" id="remember">
+                        <p>Lembrar-me</p> 
+                    </label>
+                    <a href="capeta">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="button" onclick="login()">Entrar</button>
+                <div class="paragrafo"> 
+                    <p>Ainda não possui uma conta? <span class="link" onclick="showRegisterForm()">Criar conta!</span></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Formulário de Registro -->
+        <div id="registerForm" style="display: none;">
+            <form action="#">
+                <h2>Criar conta</h2>
+                <div class="input-field">
+                    <input type="text" required>
+                    <label>Insira seu nome</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" required>
+                    <label>Insira seu email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" required>
+                    <label>Insira sua senha</label>
+                </div>
+           
+                <button type="botao" onclick="register()">Criar conta</button>
+    
+            <div class="paragrafo">
+                <p>Já possui uma conta? <span class="link" onclick="showLoginForm()">Entrar</span></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
